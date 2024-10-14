@@ -35,7 +35,13 @@ while(True):
         E=(m*v^2)/2
         print('Энергия:', E)
     elif n==6:
-
+        g=10
+        print('Введите массу в кг:')
+        m=input()
+        print('Введите высоту в м:')
+        h=input()
+        U=m*g*h
+        print('Потенциальная энергия:', U)
     elif n==7:
 
     elif n==8:
@@ -47,4 +53,5 @@ while(True):
     elif n=='q':
         break
     elif n is not range(1,11):
-        print('Неверный номер задачи')
+        print('Неверный номер задачи, введите заново:')
+        n=input()
