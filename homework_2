@@ -59,7 +59,10 @@ while(True):
         Q=m*c*d_t
         print('Колличество теплоты:', Q)
     elif n==9:
-
+        print('Введите период колебаний в с:')
+        T=input()
+        u=1/T
+        print('Частота:', u)
     elif n==10:
 
     elif n=='q':
