@@ -28,7 +28,12 @@ while(True):
         A=F*l
         print('Работа:', A)
     elif n==5:
-
+        print('Введите масску в кг:')
+        m=input()
+        print('Введите скорость в м/с:')
+        v=input()
+        E=(m*v^2)/2
+        print('Энергия:', E)
     elif n==6:
 
     elif n==7:
