@@ -64,7 +64,12 @@ while(True):
         u=1/T
         print('Частота:', u)
     elif n==10:
-
+        print('Введите радиус цилинда в м:')
+        r=input()
+        print('Введите высоту цилиндра в м:')
+        h=input()
+        V=3,14*r^2*h
+        print('Объём цилиндра:', V)
     elif n=='q':
         break
     elif n is not range(1,11):
