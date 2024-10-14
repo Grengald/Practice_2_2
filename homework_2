@@ -16,7 +16,10 @@ while(True):
         m=F/a
         print('Ускорение:', a)
     elif n==3:
-
+        print('Введите температуру в F:')
+        t_F=input()
+        t_C=5*(t_F-32)/9
+        print('Температура в С:', t_C)
     elif n==4:
 
     elif n==5:
