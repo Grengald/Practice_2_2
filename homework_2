@@ -1,77 +1,76 @@
 print('Введите номер задачи:')
-while(True):
-    n=input()
-    if n==1:
+while True:
+    n = input()
+    if n == '1':
         print('Введите расстояние в км:')
-        s=input()
+        s = float(input())
         print('Введите время в ч:')
-        t=input()
-        v=s/t
+        t = float(input())
+        v = s / t
         print('Скорость:', v)
-    elif n==2:
+    elif n == '2':
         print('Введите силу в Н:')
-        F=input()
+        F = float(input())
         print('Введите ускорение в метрах на с в квадрате:')
-        a=input()
-        m=F/a
-        print('Ускорение:', a)
-    elif n==3:
+        a = float(input())
+        m = F / a
+        print('Масса:', m)
+    elif n == '3':
         print('Введите температуру в F:')
-        t_F=input()
-        t_C=5*(t_F-32)/9
+        t_F = float(input())
+        t_C = 5 * (t_F - 32) / 9
         print('Температура в С:', t_C)
-    elif n==4:
+    elif n == '4':
         print('Введите силу в Н:')
-        F=input()
+        F = float(input())
         print('Введите расстояние в м:')
-        l=input()
-        A=F*l
+        l = float(input())
+        A = F * l
         print('Работа:', A)
-    elif n==5:
-        print('Введите масску в кг:')
-        m=input()
+    elif n == '5':
+        print('Введите массу в кг:')
+        m = float(input())
         print('Введите скорость в м/с:')
-        v=input()
-        E=(m*v^2)/2
+        v = float(input())
+        E = (m * v ** 2) / 2
         print('Энергия:', E)
-    elif n==6:
-        g=10
+    elif n == '6':
+        g = 10
         print('Введите массу в кг:')
-        m=input()
+        m = float(input())
         print('Введите высоту в м:')
-        h=input()
-        U=m*g*h
+        h = float(input())
+        U = m * g * h
         print('Потенциальная энергия:', U)
-    elif n==7:
+    elif n == '7':
         print('Введите силу в Н:')
-        F=input()
+        F = float(input())
         print('Введите площадь в м^2:')
-        s=input()
-        P=F/s
+        s = float(input())
+        P = F / s
         print('Давление:', P)
-    elif n==8:
+    elif n == '8':
         print('Введите массу в кг:')
-        m=input()
+        m = float(input())
         print('Введите удельную теплоёмкость:')
-        c=input()
+        c = float(input())
         print('Введите изменение температуры:')
-        d_t=input()
-        Q=m*c*d_t
-        print('Колличество теплоты:', Q)
-    elif n==9:
+        d_t = float(input())
+        Q = m * c * d_t
+        print('Количество теплоты:', Q)
+    elif n == '9':
         print('Введите период колебаний в с:')
-        T=input()
-        u=1/T
+        T = float(input())
+        u = 1 / T
         print('Частота:', u)
-    elif n==10:
-        print('Введите радиус цилинда в м:')
-        r=input()
+    elif n == '10':
+        print('Введите радиус цилиндра в м:')
+        r = float(input())
         print('Введите высоту цилиндра в м:')
-        h=input()
-        V=3,14*r^2*h
+        h = float(input())
+        V = 3.14 * r ** 2 * h
         print('Объём цилиндра:', V)
-    elif n=='q':
+    elif n == 'q':
         break
-    elif n is not range(1,11):
+    else:
         print('Неверный номер задачи, введите заново:')
-        n=input()
