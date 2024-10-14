@@ -21,7 +21,12 @@ while(True):
         t_C=5*(t_F-32)/9
         print('Температура в С:', t_C)
     elif n==4:
-
+        print('Введите силу в Н:')
+        F=input()
+        print('Введите расстояние в м:')
+        l=input()
+        A=F*l
+        print('Работа:', A)
     elif n==5:
 
     elif n==6:
