@@ -2,7 +2,12 @@ print('Введите номер задачи:')
 while(True):
     n=input()
     if n==1:
-
+        print('Введите расстояние в км:')
+        s=input()
+        print('Введите время в ч:')
+        t=input()
+        v=s/t
+        print('Скорость:', v,'км/ч')
     elif n==2:
         
     elif n==3:
