@@ -7,9 +7,14 @@ while(True):
         print('Введите время в ч:')
         t=input()
         v=s/t
-        print('Скорость:', v,'км/ч')
+        print('Скорость:', v)
     elif n==2:
-        
+        print('Введите силу в Н:')
+        F=input()
+        print('Введите ускорение в метрах на с в квадрате:')
+        a=input()
+        m=F/a
+        print('Ускорение:', a)
     elif n==3:
 
     elif n==4:
