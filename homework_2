@@ -43,7 +43,12 @@ while(True):
         U=m*g*h
         print('Потенциальная энергия:', U)
     elif n==7:
-
+        print('Введите силу в Н:')
+        F=input()
+        print('Введите площадь в м^2:')
+        s=input()
+        P=F/s
+        print('Давление:', P)
     elif n==8:
 
     elif n==9:
