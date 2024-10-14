@@ -50,7 +50,14 @@ while(True):
         P=F/s
         print('Давление:', P)
     elif n==8:
-
+        print('Введите массу в кг:')
+        m=input()
+        print('Введите удельную теплоёмкость:')
+        c=input()
+        print('Введите изменение температуры:')
+        d_t=input()
+        Q=m*c*d_t
+        print('Колличество теплоты:', Q)
     elif n==9:
 
     elif n==10:
